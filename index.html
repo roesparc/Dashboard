@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="sidebar">
+    <nav>
 
         <h1>Dashboard</h1>
 
@@ -91,45 +91,423 @@
             </li>
         </ul>
 
-    </div>
+    </nav>
 
-    <div class="header">
+    <header>
 
-        <input type="search">
+        <form action="" method="get">
 
-        <button>Search</button>
+            <input type="search" name="search">
 
-        <div style="width: 33px; height: 33px;">
+            <button>
+                <svg style="width:24px; height:24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
+            </button>
+
+        </form>
+
+        <div class="header-profile">
+
+            <div>
+                <a href="#">
+                    <svg style="width: 33px; height: 33px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+                </a>
+            </div>
+
             <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+                <img
+                src="./img/low-poly-3305284_640.jpg"
+                alt="Profile Image"
+                style="width: 55px; height: 55px;" />
             </a>
+
+            <a href="#">Rodrigo Espinosa</a>
+
         </div>
 
-        <a href="#">
+        <div class="header-userinfo">
+
             <img
-            src="./img/pexels-zetong-li-1784578.jpg"
+            src="./img/low-poly-3305284_640.jpg"
             alt="Profile Image"
             style="width: 55px; height: 55px;" />
-        </a>
 
-        <a href="#">Rodrigo Espinosa</a>
+            <div>Hello there,</div>
 
-        <img
-        src="./img/pexels-zetong-li-1784578.jpg"
-        alt="Profile Image"
-        style="width: 55px; height: 55px;" />
+            <div>Rodrigo Espinosa (@rolastic)</div>
 
-        <div>Hello there,</div>
+        </div>
 
-        <div>Rodrigo Espinosa (@rolastic)</div>
+        <div class="header-buttons">
 
-        <button>New</button>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
 
-        <button>Upload</button>
+        </div>
 
-        <button>Share</button>
+    </header>
 
-    </div>
+    <main>
+
+        <div class="projects">
+
+            <h1>Your Projects</h1>
+
+            <div>
+
+                <h2>
+                    <a href="">
+                        Super Cool Project
+                    </a>
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                </p>
+
+                <button>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div>
+
+                <h2>
+                    <a href="#">
+                        Less Cool Project
+                    </a>
+                </h2>
+
+                <p>
+                    Viverra suspendisse potenti nullam ac tortor.
+                    Tellus in metus vulputate eu.
+                    Arcu felis bibendum ut tristique et
+                    egestas quis ipsum suspendisse.
+                </p>
+
+                <button>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div>
+
+                <h2>
+                    <a href="#">
+                        Impossible App
+                    </a>
+                </h2>
+
+                <p>
+                    Nec sagittis aliquam malesuada bibendum arcu
+                    vitae elementum curabitur vitae.
+                </p>
+
+                <button>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div>
+
+                <h2>
+                    <a href="#">
+                        Easy App
+                    </a>
+                </h2>
+
+                <p>
+                    Volutpat lacus laoreet non curabitur gravida arcu.
+                    Sapien et ligula ullamcorper malesuada proin libero nunc.
+                </p>
+
+                <button>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div>
+
+                <h2>
+                    <a href="#">
+                        Holy Grail
+                    </a>
+                </h2>
+
+                <p>
+                    Sed egestas egestas fringilla phasellus faucibus scelerisque.
+                    Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget.
+                </p>
+
+                <button>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div>
+
+                <h2>
+                    <a href="#">
+                        Secret Project (Illuminati)
+                    </a>
+                </h2>
+
+                <p>
+                    Congue eu consequat ac felis donec et odio pellentesque diam.
+                    Fermentum et sollicitudin ac orci.
+                </p>
+
+                <button>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                    </svg>
+                </button>
+
+                <button>
+                    <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="announcements">
+
+            <h1>Announcements</h1>
+
+            <div class="announcements-content">
+
+                <div>
+
+                    <a href="#">
+
+                        <h2>Site Maintenance</h2>
+
+                        <p>
+                            Bibendum neque egestas congue quisque egestas diam in.
+                            Leo in vitae turpis massa sed elementum.
+                            Nunc aliquet bibendum enim facilisis gravida neque convallis a.
+                            Quis ipsum suspendisse ultrices gravida dictum fusce.
+                        </p>
+
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#">
+
+                        <h2>Community Share Day</h2>
+
+                        <p>
+                            Morbi tincidunt augue interdum velit euismod
+                            in pellentesque massa placerat.
+                            Vestibulum lectus mauris ultrices eros in cursus turpis massa.
+                            Egestas dui id ornare arcu. Porttitor leo a diam sollicitudin tempor.
+                            Iaculis nunc sed augue lacus viverra vitae congue eu consequat.
+                        </p>
+
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <a href="#">
+
+                        <h2>Updated Privacy Policy</h2>
+
+                        <p>
+                            Id nibh tortor id aliquet lectus proin nibh.
+                            Imperdiet proin fermentum leo vel orci porta.
+                            Est ullamcorper eget nulla facilisi.
+                            Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
+                            In dictum non consectetur a erat nam.
+                            Urna nunc id cursus metus aliquam eleifend mi in nulla.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+    
+        </div>
+
+        <div class="trending">
+
+            <h1>Trending</h1>
+
+            <div class="trending-content">
+
+                <a href="#">
+                    <img
+                    src="./img/low-poly-3305284_640.jpg"
+                    alt="User Profile Picture"
+                    style="width: 55px; height: 55px;" />
+                </a>
+
+                <div>
+
+                    <a href="#">
+                        <div>@rolastic</div>
+                    </a>
+
+                    <a href="#">
+                        <div>Super Cool Project</div>
+                    </a>
+
+                </div>
+
+                <a href="#">
+                    <img
+                    src="./img/deer-3275594_640.jpg"
+                    alt="User Profile Picture"
+                    style="width: 55px; height: 55px;" />
+                </a>
+
+                <div>
+
+                    <a href="#">
+                        <div>@forrestgump</div>
+                    </a>
+
+                    <a href="#">
+                        <div>Chocolate Box App</div>
+                    </a>
+
+                </div>
+
+                <a href="#">
+                    <img
+                    src="./img/poly-3295856_640.jpg"
+                    alt="User Profile Picture"
+                    style="width: 55px; height: 55px;" />
+                </a>
+
+                <div>
+
+                    <a href="#">
+                        <div>@brucewayne</div>
+                    </a>
+
+                    <a href="#">
+                        <div>Clean Slate Device</div>
+                    </a>
+
+                </div>
+
+                <a href="#">
+                    <img
+                    src="./img/small-poly-3310319_640.jpg"
+                    alt="User Profile Picture"
+                    style="width: 55px; height: 55px;" />
+                </a>
+
+                <div>
+
+                    <a href="#">
+                        <div>@frodobaggins</div>
+                    </a>
+
+                    <a href="#">
+                        <div>The Shire Simulator</div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </main>
 
 </body>
 </html>
