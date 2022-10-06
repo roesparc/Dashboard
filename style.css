@@ -2,6 +2,11 @@
 
 :root {
     font-size: 12px;
+
+    --main-color: #0891b2;
+    --main-light-color: #06b6d4;
+    --main-dark-color: #0e7490;
+    --light-text-color: #ffffff;
 }
 
 * {
@@ -13,37 +18,84 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template: auto 1fr / 1fr 5fr;
+    grid-template: auto 1fr / minmax(270px, 1fr) 5fr;
 }
 
 img {
     display: block;
 }
 
+/* SIDEBAR SECTION */
+
 nav {
     grid-row: 1 / 3;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: var(--main-color);
+    position: relative;
 }
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    color: var(--light-text-color);
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--light-text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+nav a:hover {
+    background-color: var(--main-light-color);
+}
+nav a:active {
+    background-color: var(--main-dark-color);
+    transition: none;
+}
+
+nav ul:last-child {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    width: calc(100% - 2rem);
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--light-text-color);
+}
+
+nav div svg {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--light-text-color);
+}
+
+/* HEADER SECTION */
 
 header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     row-gap: 2rem;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    height: fit-content;
-    margin-top: 2rem;
-}
-
-.projects {
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template: auto / repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: 1fr;
-    gap: 2rem;
-    margin-right: 2rem;
 }
 
 .header-profile {
@@ -88,6 +140,24 @@ input[type="search"] {
     width: 90%;
 }
 
+/* MAIN SECTION */
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
 .projects h1 {
     grid-column: 1 / -1;
     margin-bottom: -1rem;
@@ -110,7 +180,5 @@ input[type="search"] {
 }
 
 .trending-content > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-self: center;
 }
