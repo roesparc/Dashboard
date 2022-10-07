@@ -8,7 +8,9 @@
     --main-dark-color: #0e7490;
     --light-color: #ffffff;
     --dark-color: #164e6321;
+    --grey-color: #585858;
     --standard-transition: all 0.2s ease;
+    --main-box-shadow: 2px 3px 5px var(--dark-color);
 }
 
 * {
@@ -254,7 +256,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: fit-content;
-    margin: 3rem 0 2rem 2rem;
+    margin: 3rem 2rem 2rem 2rem;
     gap: 2rem;
 }
 
@@ -262,6 +264,8 @@ main h1 {
     font-size: 1.8rem;
     margin-left: 0.5rem;
 }
+
+/* PROJECTS SECTION */
 
 .projects {
     grid-row: 1 / 3;
@@ -282,7 +286,7 @@ main h1 {
     padding: 2rem;
     border-radius: 0.5rem 1rem 1rem 0.5rem;
     border-left: 8px solid #f59e0b;
-    box-shadow: 2px 3px 5px var(--dark-color);
+    box-shadow: var(--main-box-shadow);
 
     display: grid;
     grid-template-rows: auto 1fr;
@@ -305,7 +309,7 @@ main h1 {
 
 .projects p {
     font-size: 1.2rem;
-    color: #585858;
+    color: var(--grey-color);
 
     margin-top: 0.5rem;
 }
@@ -333,9 +337,64 @@ main h1 {
     transition: none;
 }
 
+/* ANNOUNCEMENTS SECTION */
+
 .announcements-content {
     margin-top: 1rem;
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--main-box-shadow);
 }
+
+.announcements-content > div > div{
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    transition: var(--standard-transition);
+}
+.announcements-content > div > div:hover {
+    background-color: var(--dark-color);
+}
+.announcements-content > div > div:active {
+    background-color: var(--main-dark-color);
+    transition: none;
+}
+.announcements-content > div > div:active h2,
+.announcements-content > div > div:active p {
+    color: var(--light-color);
+}
+
+.announcements-content > div + div {
+    border-top: 1px solid rgb(204, 204, 204);
+    padding-top: 0.5rem;
+}
+
+.announcements-content > :not(div:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.announcements-content a {
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+.announcements-content h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.announcements-content p {
+    height: 3.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* TRENDING SECTION */
 
 .trending-content {
     margin-top: 1rem;
