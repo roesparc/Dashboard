@@ -20,7 +20,7 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template: auto 1fr / minmax(270px, 1fr) 5fr;
+    grid-template: auto 1fr / 270px 5fr;
     background-color: var(--dark-color);
 }
 
@@ -48,10 +48,15 @@ nav {
 
 nav div {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 4rem;
+    margin: 0 0 4rem 1rem;
+}
+
+nav div svg {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--light-color);
 }
 
 nav h1 {
@@ -59,15 +64,25 @@ nav h1 {
     color: var(--light-color);
 }
 
+nav li {
+    list-style: none;
+}
+
+nav ul svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--light-color);
+}
+
 nav a {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--light-color);
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
     transition: var(--standard-transition);
 }
@@ -82,24 +97,8 @@ nav a:active {
 nav ul:last-child {
     position: absolute;
     bottom: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: calc(100% - 2rem);
-}
-
-nav li {
-    list-style: none;
-}
-
-nav ul svg {
-    width: 2rem;
-    height: 2rem;
-    fill: var(--light-color);
-}
-
-nav div svg {
-    width: 4rem;
-    height: 4rem;
-    fill: var(--light-color);
 }
 
 /* HEADER SECTION */
