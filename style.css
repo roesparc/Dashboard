@@ -360,10 +360,6 @@ main h1 {
     background-color: #164e633f;
     transition: none;
 }
-/* .announcements-content > div > div:active h2,
-.announcements-content > div > div:active p {
-    color: var(--light-color);
-} */
 
 .announcements-content > div + div {
     border-top: 1px solid rgb(204, 204, 204);
@@ -383,7 +379,7 @@ main h1 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #000000;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .announcements-content p {
