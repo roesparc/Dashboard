@@ -339,6 +339,10 @@ main h1 {
 
 /* ANNOUNCEMENTS SECTION */
 
+.announcements {
+    align-self: end;
+}
+
 .announcements-content {
     margin-top: 1rem;
     background-color: var(--light-color);
